@@ -16,8 +16,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLWorkflowStepMap",
-    "ogc.cwl.v1_2_1.CWLWorkflowStepList"
+    "ogc.cwl.v1_2_1.CWLWorkflowStepList",
+    "ogc.cwl.v1_2_1.CWLWorkflowStepMap"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowSteps/schema.yaml",

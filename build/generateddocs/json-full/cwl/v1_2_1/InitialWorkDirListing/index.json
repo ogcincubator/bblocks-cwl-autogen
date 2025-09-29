@@ -16,9 +16,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
+    "ogc.cwl.v1_2_1.DirectoryListingFileOrDirectory",
     "ogc.cwl.v1_2_1.CWLExpression",
-    "ogc.cwl.v1_2_1.DirectoryListingDirent",
-    "ogc.cwl.v1_2_1.DirectoryListingFileOrDirectory"
+    "ogc.cwl.v1_2_1.DirectoryListingDirent"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/InitialWorkDirListing/schema.yaml",

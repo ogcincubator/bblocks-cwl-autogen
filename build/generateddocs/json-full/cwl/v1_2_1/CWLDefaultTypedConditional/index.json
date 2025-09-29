@@ -16,9 +16,9 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLDefaultLocation",
-    "ogc.cwl.v1_2_1.CWLTypeSymbols",
     "ogc.cwl.v1_2_1.AnyType",
+    "ogc.cwl.v1_2_1.CWLTypeSymbols",
+    "ogc.cwl.v1_2_1.CWLDefaultLocation",
     "ogc.cwl.v1_2_1.CWLTypeSymbolValues"
   ],
   "schema": {

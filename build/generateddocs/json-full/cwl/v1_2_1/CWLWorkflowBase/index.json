@@ -16,10 +16,10 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLInputsDefinition",
-    "ogc.cwl.v1_2_1.CWLOutputsDefinition",
     "ogc.cwl.v1_2_1.CWLRequirements",
     "ogc.cwl.v1_2_1.CWLWorkflowSteps",
+    "ogc.cwl.v1_2_1.CWLInputsDefinition",
+    "ogc.cwl.v1_2_1.CWLOutputsDefinition",
     "ogc.cwl.v1_2_1.CWLHints"
   ],
   "schema": {
