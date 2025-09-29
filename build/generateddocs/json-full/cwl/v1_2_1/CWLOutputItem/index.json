@@ -16,21 +16,23 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.OutputBinding",
     "ogc.cwl.v1_2_1.CWLType",
-    "ogc.cwl.v1_2_1.CWLOutputStdErr",
     "ogc.cwl.v1_2_1.CWLOutputStdOut",
+    "ogc.cwl.v1_2_1.OutputBinding",
+    "ogc.cwl.v1_2_1.CWLOutputStdErr",
     "ogc.cwl.v1_2_1.CWLIdentifier"
   ],
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputItem/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputItem/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputItem/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLOutputItem/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLOutputItem/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLOutputItem/",
   "rdfData": [],
   "validationPassed": true,
-  "annotatedSchema": "additionalProperties: {}\ndescription: 'Output specification. Note that multiple formats are supported\n\n  and not all specification variants or parameters are presented here. Please\n\n  refer to official CWL documentation for more details (https://www.commonwl.org).\n\n  '\nproperties:\n  id:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIdentifier/schema.yaml\n    description: Identifier of the CWL output.\n  outputBinding:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.yaml\n  type:\n    oneOf:\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLType/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdOut/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdErr/schema.yaml\nrequired:\n- type\n- id\ntitle: CWLOutputItem\ntype: object\n",
+  "annotatedSchema": "additionalProperties: {}\ndescription: 'Output specification. Note that multiple formats are supported\n\n  and not all specification variants or parameters are presented here. Please\n\n  refer to official CWL documentation for more details (https://www.commonwl.org).\n\n  '\nproperties:\n  id:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIdentifier/schema.yaml\n    description: Identifier of the CWL output.\n  outputBinding:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.yaml\n    x-jsonld-id: https://w3id.org/cwl/cwl#outputBinding\n  type:\n    oneOf:\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLType/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdOut/schema.yaml\n    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdErr/schema.yaml\nrequired:\n- type\n- id\ntitle: CWLOutputItem\ntype: object\nx-jsonld-prefixes:\n  cwl: https://w3id.org/cwl/cwl#\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
   "gitPath": "_sources/v1_2_1/CWLOutputItem"
 }

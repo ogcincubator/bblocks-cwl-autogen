@@ -42,15 +42,18 @@
     },
     "stderr": {
       "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json",
-      "description": "Destination of the error stream.\nTypically, an expression referring to a desired file name or provided by a CWL input reference.\n"
+      "description": "Destination of the error stream.\nTypically, an expression referring to a desired file name or provided by a CWL input reference.\n",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#stderr"
     },
     "stdin": {
       "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json",
-      "description": "Source of the input stream. \nTypically, an expression referring to an existing file name or an input of the CWL document.\n"
+      "description": "Source of the input stream. \nTypically, an expression referring to an existing file name or an input of the CWL document.\n",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#stdin"
     },
     "stdout": {
       "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json",
-      "description": "Destination of the output stream.\nTypically, an expression referring to a desired file name or provided by a CWL input reference.\n"
+      "description": "Destination of the output stream.\nTypically, an expression referring to a desired file name or provided by a CWL input reference.\n",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#stdout"
     }
   },
   "required": [
@@ -59,5 +62,8 @@
     "outputs"
   ],
   "title": "CWL atomic definition",
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

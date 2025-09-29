@@ -1,0 +1,6 @@
+path	@id
+/itemSeparator	https://w3id.org/cwl/cwl#CommandLineBinding/itemSeparator
+/position	https://w3id.org/cwl/cwl#CommandLineBinding/position
+/prefix	https://w3id.org/cwl/cwl#CommandLineBinding/prefix
+/shellQuote	https://w3id.org/cwl/cwl#CommandLineBinding/shellQuote
+/valueFrom	https://w3id.org/cwl/cwl#valueFrom

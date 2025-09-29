@@ -18,7 +18,10 @@ properties:
   inplaceUpdate:
     title: inplaceUpdate
     type: boolean
+    x-jsonld-id: https://w3id.org/cwl/cwl#InplaceUpdateRequirement/inplaceUpdate
 required:
 - inplaceUpdate
 title: InplaceUpdateRequirement
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

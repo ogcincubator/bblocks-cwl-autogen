@@ -19,10 +19,13 @@ properties:
     type: string
   networkAccess:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccess/schema.yaml
+    x-jsonld-id: https://w3id.org/cwl/cwl#NetworkAccess/networkAccess
 required:
 - networkAccess
 title: NetworkAccessRequirement
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#
 
 ```
 
@@ -30,6 +33,22 @@ Links to the schema:
 
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccessRequirement/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccessRequirement/schema.yaml)
+
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "networkAccess": "cwl:NetworkAccess/networkAccess",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccessRequirement/context.jsonld)
 
 
 # For developers

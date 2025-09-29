@@ -1,7 +1,8 @@
 {
   "properties": {
     "linkMerge": {
-      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/LinkMergeMethod/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/LinkMergeMethod/schema.json",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#linkMerge"
     },
     "source": {
       "oneOf": [
@@ -17,8 +18,12 @@
       ]
     },
     "valueFrom": {
-      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#valueFrom"
     }
   },
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

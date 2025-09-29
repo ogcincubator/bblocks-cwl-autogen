@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "version": "cwl:SoftwarePackage/version",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

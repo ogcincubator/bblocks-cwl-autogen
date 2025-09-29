@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "itemSeparator": "cwl:CommandLineBinding/itemSeparator",
+    "position": "cwl:CommandLineBinding/position",
+    "prefix": "cwl:CommandLineBinding/prefix",
+    "shellQuote": "cwl:CommandLineBinding/shellQuote",
+    "valueFrom": "cwl:valueFrom",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

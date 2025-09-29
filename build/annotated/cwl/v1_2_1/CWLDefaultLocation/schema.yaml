@@ -7,6 +7,7 @@ oneOf:
 properties:
   basename:
     type: string
+    x-jsonld-id: https://w3id.org/cwl/cwl#basename
   class:
     enum:
     - File
@@ -16,8 +17,11 @@ properties:
     type: string
   nameroot:
     type: string
+    x-jsonld-id: https://w3id.org/cwl/cwl#File/nameroot
   path:
     type: string
 required:
 - class
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

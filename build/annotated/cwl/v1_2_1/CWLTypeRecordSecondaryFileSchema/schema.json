@@ -3,7 +3,8 @@
   "properties": {
     "pattern": {
       "$comment": "Either an expression or the regex pattern directly.",
-      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#SecondaryFileSchema/pattern"
     },
     "required": {
       "oneOf": [
@@ -13,11 +14,15 @@
         {
           "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
         }
-      ]
+      ],
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#SecondaryFileSchema/required"
     }
   },
   "required": [
     "pattern"
   ],
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

@@ -16,22 +16,23 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLIntent",
-    "ogc.cwl.v1_2_1.CWLRequirements",
-    "ogc.cwl.v1_2_1.CWLScatterMethod",
-    "ogc.cwl.v1_2_1.CWLInputsDefinition",
-    "ogc.cwl.v1_2_1.CWLOutputsDefinition",
-    "ogc.cwl.v1_2_1.CWLIdentifier",
-    "ogc.cwl.v1_2_1.CWLCommand",
-    "ogc.cwl.v1_2_1.CWLArguments",
     "ogc.cwl.v1_2_1.CWLScatter",
-    "ogc.cwl.v1_2_1.CWLHints"
+    "ogc.cwl.v1_2_1.CWLRequirements",
+    "ogc.cwl.v1_2_1.CWLCommand",
+    "ogc.cwl.v1_2_1.CWLHints",
+    "ogc.cwl.v1_2_1.CWLArguments",
+    "ogc.cwl.v1_2_1.CWLInputsDefinition",
+    "ogc.cwl.v1_2_1.CWLIdentifier",
+    "ogc.cwl.v1_2_1.CWLIntent",
+    "ogc.cwl.v1_2_1.CWLOutputsDefinition",
+    "ogc.cwl.v1_2_1.CWLScatterMethod"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLGraphItemBase/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLGraphItemBase/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLGraphItemBase/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLGraphItemBase/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLGraphItemBase/",
   "rdfData": [],
   "validationPassed": true,

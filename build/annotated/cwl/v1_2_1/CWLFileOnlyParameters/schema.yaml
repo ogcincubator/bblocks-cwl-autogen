@@ -3,8 +3,12 @@ properties:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFormat/schema.yaml
   loadContents:
     type: boolean
+    x-jsonld-id: https://w3id.org/cwl/cwl#loadContents
   secondaryFiles:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordSecondaryFiles/schema.yaml
   streamable:
     type: boolean
+    x-jsonld-id: https://w3id.org/cwl/cwl#FieldBase/streamable
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "envName": "cwl:EnvironmentDef/envName",
+    "envValue": "cwl:EnvironmentDef/envValue",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

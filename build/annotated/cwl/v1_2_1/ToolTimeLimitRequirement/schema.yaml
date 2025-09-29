@@ -22,7 +22,10 @@ properties:
     type: string
   timelimit:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/TimeLimitValue/schema.yaml
+    x-jsonld-id: https://w3id.org/cwl/cwl#ToolTimeLimit/timelimit
 required:
 - timelimit
 title: ToolTimeLimitRequirement
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

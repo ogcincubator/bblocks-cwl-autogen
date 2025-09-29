@@ -1,0 +1,27 @@
+path	@id
+/items	
+/type	
+/symbols	
+/fields	
+/fields/name	
+/fields/type	
+/fields/format	
+/fields/loadContents	https://w3id.org/cwl/cwl#loadContents
+/fields/secondaryFiles	
+/fields/secondaryFiles/pattern	https://w3id.org/cwl/cwl#SecondaryFileSchema/pattern
+/fields/secondaryFiles/required	https://w3id.org/cwl/cwl#SecondaryFileSchema/required
+/fields/streamable	https://w3id.org/cwl/cwl#FieldBase/streamable
+/fields/loadListing	https://w3id.org/cwl/cwl#loadListing
+/name	
+/type/items	
+/type/type	
+/type/symbols	
+/type/fields	
+/type/name	
+/format	
+/loadContents	https://w3id.org/cwl/cwl#loadContents
+/secondaryFiles	
+/secondaryFiles/pattern	https://w3id.org/cwl/cwl#SecondaryFileSchema/pattern
+/secondaryFiles/required	https://w3id.org/cwl/cwl#SecondaryFileSchema/required
+/streamable	https://w3id.org/cwl/cwl#FieldBase/streamable
+/loadListing	https://w3id.org/cwl/cwl#loadListing

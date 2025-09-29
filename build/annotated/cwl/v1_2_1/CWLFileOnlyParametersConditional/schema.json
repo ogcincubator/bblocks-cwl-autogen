@@ -9,6 +9,10 @@
         "secondaryFiles": {},
         "streamable": {}
       }
+    },
+    "x-jsonld-extra-terms": {
+      "loadContents": "https://w3id.org/cwl/cwl#loadContents",
+      "streamable": "https://w3id.org/cwl/cwl#FieldBase/streamable"
     }
   },
   "if": {
@@ -61,7 +65,18 @@
     ]
   },
   "then": {
-    "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParameters/schema.json"
+    "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParameters/schema.json",
+    "x-jsonld-extra-terms": {
+      "loadContents": "https://w3id.org/cwl/cwl#loadContents",
+      "streamable": "https://w3id.org/cwl/cwl#FieldBase/streamable"
+    }
   },
-  "type": "object"
+  "type": "object",
+  "x-jsonld-extra-terms": {
+    "loadContents": "https://w3id.org/cwl/cwl#loadContents",
+    "streamable": "https://w3id.org/cwl/cwl#FieldBase/streamable"
+  },
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

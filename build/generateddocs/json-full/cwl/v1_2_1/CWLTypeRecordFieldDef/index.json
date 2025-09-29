@@ -16,8 +16,8 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLTypeRecordFieldDefBase",
     "ogc.cwl.v1_2_1.CWLDirectoryOnlyParametersConditional",
+    "ogc.cwl.v1_2_1.CWLTypeRecordFieldDefBase",
     "ogc.cwl.v1_2_1.CWLFileOnlyParametersConditional"
   ],
   "schema": {
@@ -25,6 +25,7 @@
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordFieldDef/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLTypeRecordFieldDef/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordFieldDef/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLTypeRecordFieldDef/",
   "rdfData": [],
   "validationPassed": true,

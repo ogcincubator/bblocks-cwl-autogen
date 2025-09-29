@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "timelimit": "cwl:ToolTimeLimit/timelimit",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

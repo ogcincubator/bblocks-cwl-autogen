@@ -7,7 +7,8 @@
       "description": "Identifier of the CWL output."
     },
     "outputBinding": {
-      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.json",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#outputBinding"
     },
     "type": {
       "oneOf": [
@@ -28,5 +29,8 @@
     "id"
   ],
   "title": "CWLOutputItem",
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

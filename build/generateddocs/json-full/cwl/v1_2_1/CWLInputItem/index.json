@@ -16,15 +16,16 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLInputItemBase",
+    "ogc.cwl.v1_2_1.CWLDocumentation",
     "ogc.cwl.v1_2_1.CWLDefaultTypedConditional",
-    "ogc.cwl.v1_2_1.CWLDocumentation"
+    "ogc.cwl.v1_2_1.CWLInputItemBase"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputItem/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputItem/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLInputItem/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputItem/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLInputItem/",
   "rdfData": [],
   "validationPassed": true,

@@ -39,6 +39,23 @@ Links to the schema:
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SoftwareRequirement/schema.yaml)
 
 
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "package": "cwl:SoftwarePackage/package",
+    "version": "cwl:SoftwarePackage/version",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SoftwareRequirement/context.jsonld)
+
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

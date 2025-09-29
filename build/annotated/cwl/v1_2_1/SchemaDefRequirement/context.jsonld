@@ -1,0 +1,16 @@
+{
+  "@context": {
+    "types": {
+      "@context": {
+        "pattern": "cwl:SecondaryFileSchema/pattern",
+        "required": "cwl:SecondaryFileSchema/required"
+      },
+      "@id": "cwl:SchemaDefRequirement/types"
+    },
+    "loadContents": "cwl:loadContents",
+    "streamable": "cwl:FieldBase/streamable",
+    "loadListing": "cwl:loadListing",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

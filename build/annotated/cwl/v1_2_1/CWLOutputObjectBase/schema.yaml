@@ -2,6 +2,7 @@ additionalProperties: {}
 properties:
   outputBinding:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.yaml
+    x-jsonld-id: https://w3id.org/cwl/cwl#outputBinding
   type:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLType/schema.yaml
 required:
@@ -9,3 +10,5 @@ required:
 summary: CWL type definition with parameters.
 title: CWLOutputObject
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

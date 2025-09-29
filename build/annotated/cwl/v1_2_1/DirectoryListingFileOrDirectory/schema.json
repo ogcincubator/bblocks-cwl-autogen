@@ -2,7 +2,8 @@
   "additionalProperties": false,
   "properties": {
     "checksum": {
-      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/Checksum/schema.json"
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/Checksum/schema.json",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#File/checksum"
     },
     "class": {
       "enum": [
@@ -16,12 +17,16 @@
     },
     "size": {
       "minimum": 0,
-      "type": "integer"
+      "type": "integer",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#File/size"
     }
   },
   "required": [
     "class",
     "location"
   ],
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

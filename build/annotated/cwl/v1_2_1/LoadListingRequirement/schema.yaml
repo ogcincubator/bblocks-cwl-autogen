@@ -12,7 +12,10 @@ properties:
     type: string
   loadListing:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/LoadListingEnum/schema.yaml
+    x-jsonld-id: https://w3id.org/cwl/cwl#loadListing
 required:
 - loadListing
 title: LoadListingRequirement
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

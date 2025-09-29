@@ -7,4 +7,7 @@ properties:
     pattern: ^\d+(\.\d+(\.\d+(\.[A-Za-z0-9\-_]+)*)*)*$
     title: version
     type: string
+    x-jsonld-id: https://w3id.org/cwl/cwl#SoftwarePackage/version
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

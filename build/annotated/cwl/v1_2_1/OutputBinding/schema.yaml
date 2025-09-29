@@ -8,5 +8,8 @@ properties:
     - items:
         $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
       type: array
+    x-jsonld-id: https://w3id.org/cwl/cwl#CommandOutputBinding/glob
 title: OutputBinding
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#

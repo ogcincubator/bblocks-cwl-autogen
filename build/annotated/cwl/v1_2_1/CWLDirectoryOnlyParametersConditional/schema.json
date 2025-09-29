@@ -6,6 +6,9 @@
       "properties": {
         "loadListing": {}
       }
+    },
+    "x-jsonld-extra-terms": {
+      "loadListing": "https://w3id.org/cwl/cwl#loadListing"
     }
   },
   "if": {
@@ -54,7 +57,16 @@
     ]
   },
   "then": {
-    "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDirectoryOnlyParameters/schema.json"
+    "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDirectoryOnlyParameters/schema.json",
+    "x-jsonld-extra-terms": {
+      "loadListing": "https://w3id.org/cwl/cwl#loadListing"
+    }
   },
-  "type": "object"
+  "type": "object",
+  "x-jsonld-extra-terms": {
+    "loadListing": "https://w3id.org/cwl/cwl#loadListing"
+  },
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "expressionLib": "cwl:InlineJavascriptRequirement/expressionLib",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}

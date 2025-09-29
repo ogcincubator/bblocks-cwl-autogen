@@ -17,15 +17,16 @@
   "highlighted": true,
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.CWLAtomic",
+    "ogc.cwl.v1_2_1.CWLWorkflow",
     "ogc.cwl.v1_2_1.CWLGraph",
-    "ogc.cwl.v1_2_1.CWLWorkflow"
+    "ogc.cwl.v1_2_1.CWLAtomic"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWL/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWL/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWL/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWL/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWL/",
   "rdfData": [],
   "validationPassed": true,

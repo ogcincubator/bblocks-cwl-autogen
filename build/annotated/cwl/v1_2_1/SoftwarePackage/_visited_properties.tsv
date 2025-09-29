@@ -1,0 +1,4 @@
+path	@id
+/package	https://w3id.org/cwl/cwl#SoftwarePackage/package
+/specs	
+/version	https://w3id.org/cwl/cwl#SoftwarePackage/version

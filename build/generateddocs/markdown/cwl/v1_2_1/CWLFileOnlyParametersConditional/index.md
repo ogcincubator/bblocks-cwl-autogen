@@ -28,6 +28,9 @@ else:
       loadContents: {}
       secondaryFiles: {}
       streamable: {}
+  x-jsonld-extra-terms:
+    loadContents: https://w3id.org/cwl/cwl#loadContents
+    streamable: https://w3id.org/cwl/cwl#FieldBase/streamable
 if:
   oneOf:
   - $comment: Single required or optional 'File'.
@@ -57,7 +60,15 @@ if:
     type: array
 then:
   $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParameters/schema.yaml
+  x-jsonld-extra-terms:
+    loadContents: https://w3id.org/cwl/cwl#loadContents
+    streamable: https://w3id.org/cwl/cwl#FieldBase/streamable
 type: object
+x-jsonld-extra-terms:
+  loadContents: https://w3id.org/cwl/cwl#loadContents
+  streamable: https://w3id.org/cwl/cwl#FieldBase/streamable
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#
 
 ```
 
@@ -65,6 +76,25 @@ Links to the schema:
 
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParametersConditional/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParametersConditional/schema.yaml)
+
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "loadContents": "cwl:loadContents",
+    "pattern": "cwl:SecondaryFileSchema/pattern",
+    "required": "cwl:SecondaryFileSchema/required",
+    "streamable": "cwl:FieldBase/streamable",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFileOnlyParametersConditional/context.jsonld)
 
 
 # For developers

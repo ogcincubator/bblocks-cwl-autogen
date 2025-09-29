@@ -15,15 +15,17 @@
     "cwl"
   ],
   "shaclShapes": {},
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultLocation/context.jsonld",
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultLocation/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultLocation/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefaultLocation/schema.yaml",
+  "sourceLdContext": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefaultLocation/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefaultLocation/",
   "rdfData": [],
   "validationPassed": true,
-  "annotatedSchema": "additionalProperties: false\noneOf:\n- required:\n  - path\n- required:\n  - location\nproperties:\n  basename:\n    type: string\n  class:\n    enum:\n    - File\n    - Directory\n    type: string\n  location:\n    type: string\n  nameroot:\n    type: string\n  path:\n    type: string\nrequired:\n- class\ntype: object\n",
+  "annotatedSchema": "additionalProperties: false\noneOf:\n- required:\n  - path\n- required:\n  - location\nproperties:\n  basename:\n    type: string\n    x-jsonld-id: https://w3id.org/cwl/cwl#basename\n  class:\n    enum:\n    - File\n    - Directory\n    type: string\n  location:\n    type: string\n  nameroot:\n    type: string\n    x-jsonld-id: https://w3id.org/cwl/cwl#File/nameroot\n  path:\n    type: string\nrequired:\n- class\ntype: object\nx-jsonld-prefixes:\n  cwl: https://w3id.org/cwl/cwl#\n",
   "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
   "gitPath": "_sources/v1_2_1/CWLDefaultLocation"
 }

@@ -14,7 +14,8 @@
   ],
   "properties": {
     "basename": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#basename"
     },
     "class": {
       "enum": [
@@ -27,7 +28,8 @@
       "type": "string"
     },
     "nameroot": {
-      "type": "string"
+      "type": "string",
+      "x-jsonld-id": "https://w3id.org/cwl/cwl#File/nameroot"
     },
     "path": {
       "type": "string"
@@ -36,5 +38,8 @@
   "required": [
     "class"
   ],
-  "type": "object"
+  "type": "object",
+  "x-jsonld-prefixes": {
+    "cwl": "https://w3id.org/cwl/cwl#"
+  }
 }

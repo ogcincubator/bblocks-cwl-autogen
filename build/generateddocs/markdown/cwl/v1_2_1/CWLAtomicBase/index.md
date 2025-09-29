@@ -48,10 +48,12 @@ properties:
       input reference.
 
       '
+    x-jsonld-id: https://w3id.org/cwl/cwl#stderr
   stdin:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
     description: "Source of the input stream. \nTypically, an expression referring
       to an existing file name or an input of the CWL document.\n"
+    x-jsonld-id: https://w3id.org/cwl/cwl#stdin
   stdout:
     $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
     description: 'Destination of the output stream.
@@ -60,12 +62,15 @@ properties:
       input reference.
 
       '
+    x-jsonld-id: https://w3id.org/cwl/cwl#stdout
 required:
 - class
 - inputs
 - outputs
 title: CWL atomic definition
 type: object
+x-jsonld-prefixes:
+  cwl: https://w3id.org/cwl/cwl#
 
 ```
 
@@ -73,6 +78,88 @@ Links to the schema:
 
 * YAML version: [schema.yaml](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLAtomicBase/schema.json)
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLAtomicBase/schema.yaml)
+
+
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "itemSeparator": "cwl:CommandLineBinding/itemSeparator",
+    "position": "cwl:CommandLineBinding/position",
+    "prefix": "cwl:CommandLineBinding/prefix",
+    "shellQuote": "cwl:CommandLineBinding/shellQuote",
+    "valueFrom": "cwl:valueFrom",
+    "DockerRequirement": "cwl:DockerRequirement",
+    "EnvVarRequirement": "cwl:EnvVarRequirement",
+    "InitialWorkDirRequirement": "cwl:InitialWorkDirRequirement",
+    "InlineJavascriptRequirement": "cwl:InlineJavascriptRequirement",
+    "InplaceUpdateRequirement": "cwl:InplaceUpdateRequirement",
+    "LoadListingRequirement": "cwl:LoadListingRequirement",
+    "MultipleInputFeatureRequirement": "cwl:MultipleInputFeatureRequirement",
+    "NetworkAccess": "cwl:NetworkAccess",
+    "ResourceRequirement": "cwl:ResourceRequirement",
+    "ScatterFeatureRequirement": "cwl:ScatterFeatureRequirement",
+    "SchemaDefRequirement": "cwl:SchemaDefRequirement",
+    "ShellCommandRequirement": "cwl:ShellCommandRequirement",
+    "SoftwareRequirement": "cwl:SoftwareRequirement",
+    "StepInputExpressionRequirement": "cwl:StepInputExpressionRequirement",
+    "SubworkflowFeatureRequirement": "cwl:SubworkflowFeatureRequirement",
+    "ToolTimeLimit": "cwl:ToolTimeLimit",
+    "WorkReuse": "cwl:WorkReuse",
+    "dockerFile": "cwl:DockerRequirement/dockerFile",
+    "dockerImageId": "cwl:DockerRequirement/dockerImageId",
+    "dockerImport": "cwl:DockerRequirement/dockerImport",
+    "dockerLoad": "cwl:DockerRequirement/dockerLoad",
+    "dockerOutputDirectory": "cwl:DockerRequirement/dockerOutputDirectory",
+    "dockerPull": "cwl:DockerRequirement/dockerPull",
+    "package": "cwl:SoftwarePackage/package",
+    "version": "cwl:SoftwarePackage/version",
+    "envName": "cwl:EnvironmentDef/envName",
+    "envValue": "cwl:EnvironmentDef/envValue",
+    "types": "cwl:SchemaDefRequirement/types",
+    "writable": "cwl:Dirent/writable",
+    "checksum": "cwl:File/checksum",
+    "size": "cwl:File/size",
+    "expressionLib": "cwl:InlineJavascriptRequirement/expressionLib",
+    "inplaceUpdate": "cwl:InplaceUpdateRequirement/inplaceUpdate",
+    "loadListing": "cwl:loadListing",
+    "networkAccess": "cwl:NetworkAccess/networkAccess",
+    "coresMax": "cwl:ResourceRequirement/coresMax",
+    "coresMin": "cwl:ResourceRequirement/coresMin",
+    "outdirMax": "cwl:ResourceRequirement/outdirMax",
+    "outdirMin": "cwl:ResourceRequirement/outdirMin",
+    "ramMax": "cwl:ResourceRequirement/ramMax",
+    "ramMin": "cwl:ResourceRequirement/ramMin",
+    "tmpdirMax": "cwl:ResourceRequirement/tmpdirMax",
+    "tmpdirMin": "cwl:ResourceRequirement/tmpdirMin",
+    "timelimit": "cwl:ToolTimeLimit/timelimit",
+    "enableReuse": "cwl:WorkReuse/enableReuse",
+    "inputBinding": "cwl:inputBinding",
+    "loadContents": "cwl:loadContents",
+    "pattern": "cwl:SecondaryFileSchema/pattern",
+    "required": "cwl:SecondaryFileSchema/required",
+    "streamable": "cwl:FieldBase/streamable",
+    "basename": "cwl:basename",
+    "nameroot": "cwl:File/nameroot",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "outputBinding": {
+      "@context": {
+        "glob": "cwl:CommandOutputBinding/glob"
+      },
+      "@id": "cwl:outputBinding"
+    },
+    "stderr": "cwl:stderr",
+    "stdin": "cwl:stdin",
+    "stdout": "cwl:stdout",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLAtomicBase/context.jsonld)
 
 
 # For developers

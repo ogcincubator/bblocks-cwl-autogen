@@ -40,6 +40,23 @@ Links to the schema:
 * JSON version: [schema.json](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/EnvVarRequirement/schema.yaml)
 
 
+# JSON-LD Context
+
+```jsonld
+{
+  "@context": {
+    "envName": "cwl:EnvironmentDef/envName",
+    "envValue": "cwl:EnvironmentDef/envValue",
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "@version": 1.1
+  }
+}
+```
+
+You can find the full JSON-LD context here:
+[context.jsonld](https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/EnvVarRequirement/context.jsonld)
+
+
 # For developers
 
 The source code for this Building Block can be found in the following repository:

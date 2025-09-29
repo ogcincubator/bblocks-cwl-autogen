@@ -16,16 +16,17 @@
   ],
   "shaclShapes": {},
   "dependsOn": [
-    "ogc.cwl.v1_2_1.AnyType",
-    "ogc.cwl.v1_2_1.CWLTypeSymbols",
     "ogc.cwl.v1_2_1.CWLDefaultLocation",
-    "ogc.cwl.v1_2_1.CWLTypeSymbolValues"
+    "ogc.cwl.v1_2_1.AnyType",
+    "ogc.cwl.v1_2_1.CWLTypeSymbolValues",
+    "ogc.cwl.v1_2_1.CWLTypeSymbols"
   ],
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultTypedConditional/schema.yaml",
     "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultTypedConditional/schema.json"
   },
   "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefaultTypedConditional/schema.yaml",
+  "ldContext": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultTypedConditional/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefaultTypedConditional/",
   "rdfData": [],
   "validationPassed": true,

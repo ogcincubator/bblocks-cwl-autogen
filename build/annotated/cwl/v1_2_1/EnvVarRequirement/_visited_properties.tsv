@@ -1,0 +1,5 @@
+path	@id
+/class	
+/envDef	
+/envDef/envName	https://w3id.org/cwl/cwl#EnvironmentDef/envName
+/envDef/envValue	https://w3id.org/cwl/cwl#EnvironmentDef/envValue
