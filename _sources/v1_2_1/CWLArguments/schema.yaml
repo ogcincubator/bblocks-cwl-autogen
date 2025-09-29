@@ -1,0 +1,7 @@
+description: Base arguments passed to the command.
+items:
+  oneOf:
+  - type: string
+  - $ref: bblocks://ogc.cwl.v1_2_1.InputBinding
+title: CWLArguments
+type: array

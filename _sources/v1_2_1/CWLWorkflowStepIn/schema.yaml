@@ -1,0 +1,5 @@
+description: Mapping of Workflow step inputs to nested CWL tool definitions inputs
+  or outputs.
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLWorkflowStepInMap
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLWorkflowStepInList

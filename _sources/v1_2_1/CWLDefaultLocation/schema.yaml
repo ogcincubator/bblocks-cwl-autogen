@@ -1,0 +1,23 @@
+additionalProperties: false
+oneOf:
+- required:
+  - path
+- required:
+  - location
+properties:
+  basename:
+    type: string
+  class:
+    enum:
+    - File
+    - Directory
+    type: string
+  location:
+    type: string
+  nameroot:
+    type: string
+  path:
+    type: string
+required:
+- class
+type: object

@@ -1,0 +1,4 @@
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLAtomic
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLGraph
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLWorkflow

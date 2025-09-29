@@ -1,0 +1,12 @@
+allOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLInputItemBase
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLDefaultTypedConditional
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLDocumentation
+description: 'Input specification. Note that multiple formats are supported and
+
+  not all specification variants or parameters are presented here. Please refer
+
+  to official CWL documentation for more details (https://www.commonwl.org).
+
+  '
+title: Input

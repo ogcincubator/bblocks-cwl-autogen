@@ -1,0 +1,14 @@
+{
+  "name": "ScatterFeatureRequirement",
+  "itemClass": "schema",
+  "abstract": "A 'scatter' operation specifies that the associated Workflow step should execute separately over a list of\ninput elements. Each job making up a scatter operation is independent and may be executed concurrently\n(see also: https://www.commonwl.org/v1.2/Workflow.html#WorkflowStep).\n",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.687057",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ]
+}

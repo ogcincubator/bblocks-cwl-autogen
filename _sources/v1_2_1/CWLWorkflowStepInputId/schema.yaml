@@ -1,0 +1,6 @@
+properties:
+  id:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLIdentifier
+required:
+- id
+type: object

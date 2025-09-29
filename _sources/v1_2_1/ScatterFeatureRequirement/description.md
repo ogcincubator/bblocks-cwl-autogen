@@ -1,0 +1,1 @@
+Fields 'scatter' and 'scatterMethod' at the root of a 'WorkflowStep', not within the requirement.

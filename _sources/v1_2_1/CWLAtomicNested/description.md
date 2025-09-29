@@ -1,0 +1,1 @@
+Same as 'CWLAtomic', but 'cwlVersion' not repeated (only at root).

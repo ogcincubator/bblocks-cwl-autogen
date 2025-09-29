@@ -1,0 +1,4 @@
+allOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLTypeRecordFieldDefBase
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLFileOnlyParametersConditional
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLDirectoryOnlyParametersConditional

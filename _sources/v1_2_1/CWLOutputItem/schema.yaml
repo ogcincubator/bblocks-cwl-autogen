@@ -1,0 +1,24 @@
+additionalProperties: {}
+description: 'Output specification. Note that multiple formats are supported
+
+  and not all specification variants or parameters are presented here. Please
+
+  refer to official CWL documentation for more details (https://www.commonwl.org).
+
+  '
+properties:
+  id:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLIdentifier
+    description: Identifier of the CWL output.
+  outputBinding:
+    $ref: bblocks://ogc.cwl.v1_2_1.OutputBinding
+  type:
+    oneOf:
+    - $ref: bblocks://ogc.cwl.v1_2_1.CWLType
+    - $ref: bblocks://ogc.cwl.v1_2_1.CWLOutputStdOut
+    - $ref: bblocks://ogc.cwl.v1_2_1.CWLOutputStdErr
+required:
+- type
+- id
+title: CWLOutputItem
+type: object

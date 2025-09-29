@@ -1,0 +1,12 @@
+properties:
+  linkMerge:
+    $ref: bblocks://ogc.cwl.v1_2_1.LinkMergeMethod
+  source:
+    oneOf:
+    - type: string
+    - items:
+        type: string
+      type: array
+  valueFrom:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLExpression
+type: object

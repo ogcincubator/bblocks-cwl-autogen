@@ -1,0 +1,4 @@
+enum:
+- merge_nested
+- merge_flattened
+type: string

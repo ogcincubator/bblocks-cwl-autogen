@@ -1,0 +1,11 @@
+properties:
+  items:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLType
+  type:
+    enum:
+    - array
+    type: string
+required:
+- type
+- items
+type: object

@@ -1,0 +1,1 @@
+Same as 'CWLWorkflow', but 'cwlVersion' not repeated (only at root).

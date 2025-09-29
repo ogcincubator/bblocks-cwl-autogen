@@ -1,0 +1,4 @@
+properties:
+  loadListing:
+    $ref: bblocks://ogc.cwl.v1_2_1.LoadListingEnum
+type: object

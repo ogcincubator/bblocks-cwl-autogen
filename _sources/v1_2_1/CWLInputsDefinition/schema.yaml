@@ -1,0 +1,11 @@
+description: All inputs available to the Application Package.
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLInputList
+- $comment: Avoid 'oneOf' conflict of generic mapping key strings as input identifier
+    matching against '$import'.
+  allOf:
+  - $ref: bblocks://ogc.cwl.v1_2_1.CWLInputMap
+  - not:
+      $ref: bblocks://ogc.cwl.v1_2_1.CWLImport
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLImport
+title: CWLInputsDefinition

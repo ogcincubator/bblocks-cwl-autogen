@@ -1,0 +1,6 @@
+enum:
+- no_listing
+- shallow_listing
+- deep_listing
+title: LoadListingEnum
+type: string

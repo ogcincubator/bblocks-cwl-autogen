@@ -1,0 +1,21 @@
+additionalProperties: false
+description: 'Hint indicating that the Application Package corresponds to a
+
+  builtin process of this instance. (note: can only be an ''hint''
+
+  as it is unofficial CWL specification).
+
+  '
+properties:
+  class:
+    enum:
+    - BuiltinRequirement
+    type: string
+  process:
+    $comment: Builtin process identifier.
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLTextPatternID
+required:
+- process
+- class
+title: BuiltinRequirement
+type: object

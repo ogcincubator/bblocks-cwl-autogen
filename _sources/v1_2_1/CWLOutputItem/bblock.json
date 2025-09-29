@@ -1,0 +1,14 @@
+{
+  "name": "CWLOutputItem",
+  "itemClass": "schema",
+  "abstract": "Output specification. Note that multiple formats are supported\nand not all specification variants or parameters are presented here. Please\nrefer to official CWL documentation for more details (https://www.commonwl.org).\n",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.690602",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ]
+}

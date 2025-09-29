@@ -1,0 +1,12 @@
+properties:
+  fields:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLTypeRecordFields
+  name:
+    type: string
+  type:
+    enum:
+    - record
+    type: string
+required:
+- type
+type: object

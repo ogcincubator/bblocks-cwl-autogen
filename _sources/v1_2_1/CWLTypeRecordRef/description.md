@@ -1,0 +1,1 @@
+Avoid 'oneOf' conflict of valid strings between this CWL record reference and the generic CWL types.

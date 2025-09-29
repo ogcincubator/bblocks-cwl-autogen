@@ -1,0 +1,11 @@
+description: 'One or more input identifier of an application step within a Workflow
+
+  were an array-based input to that Workflow should be scattered across multiple
+
+  instances of the step application.
+
+  '
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLIdentifier
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLScatterMulti
+title: CWLScatter

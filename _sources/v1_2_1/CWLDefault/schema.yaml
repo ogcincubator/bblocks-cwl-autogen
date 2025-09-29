@@ -1,0 +1,10 @@
+description: Default value of input if not provided for task execution.
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.AnyLiteralType
+- $ref: bblocks://ogc.cwl.v1_2_1.AnyLiteralList
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLDefaultLocation
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLDefaultObject
+- items:
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLDefaultObject
+  type: array
+title: CWLDefault

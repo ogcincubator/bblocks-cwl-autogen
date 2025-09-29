@@ -1,0 +1,6 @@
+additionalProperties: false
+items:
+  title: cmd
+  type: string
+title: Command Parts
+type: array

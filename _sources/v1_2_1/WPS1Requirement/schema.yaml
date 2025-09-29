@@ -1,0 +1,24 @@
+additionalProperties: false
+description: 'Hint indicating that the Application Package corresponds to a
+
+  WPS-1 provider process that should be remotely executed and monitored by this
+
+  instance. (note: can only be an ''''hint'''' as it is unofficial CWL specification).
+
+  '
+properties:
+  class:
+    enum:
+    - WPS1Requirement
+    type: string
+  process:
+    $comment: Process identifier of the remote WPS provider.
+    $ref: bblocks://ogc.cwl.v1_2_1.CWLTextPatternID
+  provider:
+    $ref: bblocks://ogc.cwl.v1_2_1.ReferenceURL
+    description: WPS provider endpoint.
+required:
+- process
+- provider
+title: WPS1Requirement
+type: object

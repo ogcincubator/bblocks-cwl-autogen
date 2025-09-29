@@ -1,0 +1,11 @@
+description: All outputs produced by the Application Package.
+oneOf:
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLOutputList
+- $comment: Avoid 'oneOf' conflict of generic mapping key strings as output identifier
+    matching against '$import'.
+  allOf:
+  - $ref: bblocks://ogc.cwl.v1_2_1.CWLOutputMap
+  - not:
+      $ref: bblocks://ogc.cwl.v1_2_1.CWLImport
+- $ref: bblocks://ogc.cwl.v1_2_1.CWLImport
+title: CWLOutputsDefinition

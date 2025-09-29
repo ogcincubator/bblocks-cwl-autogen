@@ -1,0 +1,20 @@
+$comment: Fields 'scatter' and 'scatterMethod' at the root of a 'WorkflowStep', not
+  within the requirement.
+additionalProperties: false
+description: 'A ''scatter'' operation specifies that the associated Workflow step
+  should execute separately over a list of
+
+  input elements. Each job making up a scatter operation is independent and may be
+  executed concurrently
+
+  (see also: https://www.commonwl.org/v1.2/Workflow.html#WorkflowStep).
+
+  '
+properties:
+  class:
+    description: CWL requirement class specification.
+    enum:
+    - ScatterFeatureRequirement
+    type: string
+title: ScatterFeatureRequirement
+type: object
