@@ -1,0 +1,34 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "class": {
+      "enum": [
+        "SchemaDefRequirement"
+      ],
+      "type": "string"
+    },
+    "types": {
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeEnum/schema.json"
+          },
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordSchema/schema.json"
+          },
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordArray/schema.json"
+          },
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.json"
+          }
+        ]
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "types"
+  ],
+  "type": "object"
+}

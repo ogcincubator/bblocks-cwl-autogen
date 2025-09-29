@@ -1,0 +1,12 @@
+additionalProperties: false
+properties:
+  pattern:
+    $comment: Either an expression or the regex pattern directly.
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+  required:
+    oneOf:
+    - type: boolean
+    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+required:
+- pattern
+type: object

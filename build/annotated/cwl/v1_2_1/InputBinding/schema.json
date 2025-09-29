@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "description": "Defines how to specify the input for the command.",
+  "properties": {
+    "itemSeparator": {
+      "type": "string"
+    },
+    "position": {
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+        }
+      ]
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "shellQuote": {
+      "type": "boolean"
+    },
+    "valueFrom": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+    }
+  },
+  "title": "Input Binding",
+  "type": "object"
+}

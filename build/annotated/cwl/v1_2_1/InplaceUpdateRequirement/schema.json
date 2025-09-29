@@ -1,0 +1,21 @@
+{
+  "additionalProperties": false,
+  "description": "If 'inplaceUpdate' is true, then an implementation supporting this feature may permit tools to directly\nupdate files with 'writable: true' in 'InitialWorkDirRequirement'. That is, as an optimization,\nfiles may be destructively modified in place as opposed to copied and updated\n(see also: https://www.commonwl.org/v1.2/CommandLineTool.html#InplaceUpdateRequirement).\n",
+  "properties": {
+    "class": {
+      "enum": [
+        "InplaceUpdateRequirement"
+      ],
+      "type": "string"
+    },
+    "inplaceUpdate": {
+      "title": "inplaceUpdate",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "inplaceUpdate"
+  ],
+  "title": "InplaceUpdateRequirement",
+  "type": "object"
+}

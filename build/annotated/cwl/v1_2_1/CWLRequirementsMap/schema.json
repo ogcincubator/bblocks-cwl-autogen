@@ -1,0 +1,64 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "DockerRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/DockerRequirement/schema.json"
+    },
+    "EnvVarRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/EnvVarRequirement/schema.json"
+    },
+    "InitialWorkDirRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/InitialWorkDirRequirement/schema.json"
+    },
+    "InlineJavascriptRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/InlineJavascriptRequirement/schema.json"
+    },
+    "InplaceUpdateRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/InplaceUpdateRequirement/schema.json"
+    },
+    "LoadListingRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/LoadListingRequirement/schema.json"
+    },
+    "MultipleInputFeatureRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/MultipleInputFeatureRequirement/schema.json"
+    },
+    "NetworkAccess": {
+      "$comment": "Not 'NetworkAccessRequirement'",
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccessRequirement/schema.json"
+    },
+    "ResourceRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceRequirement/schema.json"
+    },
+    "ScatterFeatureRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ScatterFeatureRequirement/schema.json"
+    },
+    "SchemaDefRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaDefRequirement/schema.json"
+    },
+    "ShellCommandRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ShellCommandRequirement/schema.json"
+    },
+    "SoftwareRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SoftwareRequirement/schema.json"
+    },
+    "StepInputExpressionRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/StepInputExpressionRequirement/schema.json"
+    },
+    "SubworkflowFeatureRequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SubworkflowFeatureRequirement/schema.json"
+    },
+    "ToolTimeLimit": {
+      "$comment": "Not 'ToolTimeLimitRequirement'.",
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ToolTimeLimitRequirement/schema.json"
+    },
+    "WorkReuse": {
+      "$comment": "Not 'WorkReuseRequirement'.",
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/WorkReuseRequirement/schema.json"
+    },
+    "cwltool:CUDARequirement": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/cwltool:CUDARequirement/schema.json"
+    }
+  },
+  "title": "CWLRequirementsMap",
+  "type": "object"
+}

@@ -1,0 +1,12 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "class": {
+      "enum": [
+        "ShellCommandRequirement"
+      ],
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

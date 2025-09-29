@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "hints": {
+      "$comment": "Technically a different subset, but lots of redefinitions to be done.",
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHints/schema.json"
+    },
+    "inputs": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputsDefinition/schema.json"
+    },
+    "outputs": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputsDefinition/schema.json"
+    },
+    "requirements": {
+      "$comment": "Technically a different subset, but lots of redefinitions to be done.",
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLRequirements/schema.json"
+    },
+    "steps": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowSteps/schema.json"
+    }
+  },
+  "type": "object"
+}

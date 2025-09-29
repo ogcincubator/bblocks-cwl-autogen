@@ -1,0 +1,13 @@
+$comment: Called 'Dirent' in documentation.
+additionalProperties: false
+properties:
+  entry:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+  entryname:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+  writable:
+    type: boolean
+required:
+- entry
+title: DirectoryListingDirent
+type: object

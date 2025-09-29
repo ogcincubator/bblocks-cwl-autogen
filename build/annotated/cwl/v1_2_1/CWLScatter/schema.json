@@ -1,0 +1,12 @@
+{
+  "description": "One or more input identifier of an application step within a Workflow\nwere an array-based input to that Workflow should be scattered across multiple\ninstances of the step application.\n",
+  "oneOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIdentifier/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLScatterMulti/schema.json"
+    }
+  ],
+  "title": "CWLScatter"
+}

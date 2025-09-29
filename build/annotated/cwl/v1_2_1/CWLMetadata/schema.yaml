@@ -1,0 +1,10 @@
+properties:
+  s:keywords:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLKeywordList/schema.yaml
+  version:
+    description: Version of the process.
+    example: 1.2.3
+    pattern: ^\d+(\.\d+(\.\d+(\.[A-Za-z0-9\-_]+)*)*)*$
+    title: version
+    type: string
+type: object

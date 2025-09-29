@@ -1,0 +1,10 @@
+properties:
+  doc:
+    oneOf:
+    - type: string
+    - items:
+        type: string
+      type: array
+  label:
+    type: string
+type: object

@@ -1,0 +1,9 @@
+properties:
+  clwVersion:
+    description: CWL version of the described application package.
+    pattern: ^v\d+(\.\d+(\.\d+)*)*$
+    title: cwlVersion
+    type: string
+required:
+- cwlVersion
+type: object

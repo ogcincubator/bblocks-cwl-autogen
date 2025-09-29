@@ -1,0 +1,32 @@
+{
+  "additionalProperties": {},
+  "description": "Output specification. Note that multiple formats are supported\nand not all specification variants or parameters are presented here. Please\nrefer to official CWL documentation for more details (https://www.commonwl.org).\n",
+  "properties": {
+    "id": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIdentifier/schema.json",
+      "description": "Identifier of the CWL output."
+    },
+    "outputBinding": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/OutputBinding/schema.json"
+    },
+    "type": {
+      "oneOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLType/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdOut/schema.json"
+        },
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputStdErr/schema.json"
+        }
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "id"
+  ],
+  "title": "CWLOutputItem",
+  "type": "object"
+}

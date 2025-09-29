@@ -1,0 +1,12 @@
+{
+  "description": "Explicit requirement to execute the application package.",
+  "oneOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLRequirementsMap/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLRequirementsList/schema.json"
+    }
+  ],
+  "title": "CWLRequirements"
+}

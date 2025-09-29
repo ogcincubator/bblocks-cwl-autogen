@@ -1,0 +1,14 @@
+{
+  "$comment": "The schema validation of the CWL will not itself perform the '$import' to resolve and validate its contents.\nTherefore, the complete schema will not be validated entirely, and could still be partially malformed.\nTo ensure proper and exhaustive validation of a CWL definition with this schema, all '$import' directives\nshould be resolved and extended beforehand.\n",
+  "additionalProperties": false,
+  "description": "Represents an '$import' directive that should point toward another compatible CWL file to import where specified.\nThe contents of the imported file should be relevant contextually where it is being imported.\n",
+  "properties": {
+    "$import": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "$import"
+  ],
+  "type": "object"
+}

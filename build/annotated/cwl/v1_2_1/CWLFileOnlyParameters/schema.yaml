@@ -1,0 +1,10 @@
+properties:
+  format:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLFormat/schema.yaml
+  loadContents:
+    type: boolean
+  secondaryFiles:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordSecondaryFiles/schema.yaml
+  streamable:
+    type: boolean
+type: object

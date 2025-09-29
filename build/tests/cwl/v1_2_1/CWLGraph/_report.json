@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.cwl.v1_2_1.CWLGraph - CWLGraph",
+  "bblockName": "CWLGraph",
+  "bblockId": "ogc.cwl.v1_2_1.CWLGraph",
+  "generated": "2025-09-29T12:39:35.430119+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

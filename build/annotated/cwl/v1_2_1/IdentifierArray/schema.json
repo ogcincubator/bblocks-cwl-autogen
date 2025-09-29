@@ -1,0 +1,8 @@
+{
+  "items": {
+    "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTextPatternID/schema.json"
+  },
+  "minItems": 1,
+  "title": "IdentifierArray",
+  "type": "array"
+}

@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLDefault",
+  "name": "CWLDefault",
+  "itemClass": "schema",
+  "abstract": "Default value of input if not provided for task execution.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.714555",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.cwl.v1_2_1.AnyLiteralList",
+    "ogc.cwl.v1_2_1.CWLDefaultLocation",
+    "ogc.cwl.v1_2_1.CWLDefaultObject",
+    "ogc.cwl.v1_2_1.AnyLiteralType"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefault/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefault/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefault/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLDefault/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "description: Default value of input if not provided for task execution.\noneOf:\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/AnyLiteralType/schema.yaml\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/AnyLiteralList/schema.yaml\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultLocation/schema.yaml\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultObject/schema.yaml\n- items:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultObject/schema.yaml\n  type: array\ntitle: CWLDefault\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLDefault"
+}

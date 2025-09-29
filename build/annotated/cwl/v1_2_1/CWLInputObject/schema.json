@@ -1,0 +1,15 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputObjectBase/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDefaultTypedConditional/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLDocumentation/schema.json"
+    }
+  ],
+  "summary": "CWL type definition with parameters.",
+  "title": "CWLInputObject"
+}

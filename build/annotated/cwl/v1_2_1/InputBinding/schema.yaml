@@ -1,0 +1,17 @@
+additionalProperties: false
+description: Defines how to specify the input for the command.
+properties:
+  itemSeparator:
+    type: string
+  position:
+    oneOf:
+    - type: integer
+    - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+  prefix:
+    type: string
+  shellQuote:
+    type: boolean
+  valueFrom:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml
+title: Input Binding
+type: object

@@ -1,0 +1,22 @@
+{
+  "additionalProperties": {},
+  "description": "Defines how to retrieve the output result from the command.",
+  "properties": {
+    "glob": {
+      "description": "Glob pattern to find the output on disk or mounted docker volume.",
+      "oneOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+        },
+        {
+          "items": {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+          },
+          "type": "array"
+        }
+      ]
+    }
+  },
+  "title": "OutputBinding",
+  "type": "object"
+}

@@ -1,0 +1,20 @@
+{
+  "additionalProperties": false,
+  "description": "Indicates that the workflow platform must support inline Javascript expressions.\n\nIf this requirement is not present, the workflow platform must not perform expression interpolation\n(see also: https://www.commonwl.org/v1.2/CommandLineTool.html#InlineJavascriptRequirement).\n",
+  "properties": {
+    "class": {
+      "enum": [
+        "InlineJavascriptRequirement"
+      ],
+      "type": "string"
+    },
+    "expressionLib": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/InlineJavascriptLibraries/schema.json"
+    }
+  },
+  "required": [
+    "expressionLib"
+  ],
+  "title": "InlineJavascriptRequirement",
+  "type": "object"
+}

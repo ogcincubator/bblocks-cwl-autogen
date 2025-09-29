@@ -1,0 +1,55 @@
+$comment: 'Note that ''Any'' is equivalent to any of the non-null types.
+
+  Therefore, a nullable ''Any'' explicitly specified by ''Any?'' or its array-nullable
+  form ''Any[]?'' are not equivalent.
+
+  '
+description: Field type definition.
+enum:
+- 'null'
+- Any
+- Any?
+- Any[]
+- Any[]?
+- Directory
+- Directory?
+- Directory[]
+- Directory[]?
+- File
+- File?
+- File[]
+- File[]?
+- boolean
+- boolean?
+- boolean[]
+- boolean[]?
+- double
+- double?
+- double[]
+- double[]?
+- enum?
+- enum[]
+- enum[]?
+- float
+- float?
+- float[]
+- float[]?
+- int
+- int?
+- int[]
+- int[]?
+- integer
+- integer?
+- integer[]
+- integer[]?
+- long
+- long?
+- long[]
+- long[]?
+- string
+- string?
+- string[]
+- string[]?
+summary: CWL type string definition.
+title: CWL type string definition
+type: string

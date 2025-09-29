@@ -1,0 +1,12 @@
+properties:
+  fields:
+    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordFields/schema.yaml
+  name:
+    type: string
+  type:
+    enum:
+    - record
+    type: string
+required:
+- type
+type: object

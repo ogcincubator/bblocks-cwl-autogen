@@ -1,0 +1,7 @@
+additionalProperties: false
+properties:
+  $include:
+    type: string
+required:
+- $include
+type: object

@@ -1,0 +1,33 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLWorkflowStepObject",
+  "name": "CWLWorkflowStepObject",
+  "itemClass": "schema",
+  "abstract": "CWLWorkflowStepObject",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.691949",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.cwl.v1_2_1.CWLWorkflowStepScatter",
+    "ogc.cwl.v1_2_1.CWLWorkflowStepDefinition"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepObject/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepObject/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLWorkflowStepObject/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLWorkflowStepObject/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "allOf:\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepDefinition/schema.yaml\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepScatter/schema.yaml\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLWorkflowStepObject"
+}

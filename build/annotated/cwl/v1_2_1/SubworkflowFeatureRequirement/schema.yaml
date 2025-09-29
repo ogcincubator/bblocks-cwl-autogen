@@ -1,0 +1,11 @@
+additionalProperties: false
+description: Indicates that the 'Workflow' must support nested workflows in the 'run'
+  field of 'WorkflowStep'.
+properties:
+  class:
+    description: CWL requirement class specification.
+    enum:
+    - SubworkflowFeatureRequirement
+    type: string
+title: SubworkflowFeatureRequirement
+type: object

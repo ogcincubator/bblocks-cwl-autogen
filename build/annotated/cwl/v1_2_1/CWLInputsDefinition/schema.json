@@ -1,0 +1,25 @@
+{
+  "description": "All inputs available to the Application Package.",
+  "oneOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputList/schema.json"
+    },
+    {
+      "$comment": "Avoid 'oneOf' conflict of generic mapping key strings as input identifier matching against '$import'.",
+      "allOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputMap/schema.json"
+        },
+        {
+          "not": {
+            "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.json"
+          }
+        }
+      ]
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.json"
+    }
+  ],
+  "title": "CWLInputsDefinition"
+}

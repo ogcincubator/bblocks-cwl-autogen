@@ -1,0 +1,33 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLHints",
+  "name": "CWLHints",
+  "itemClass": "schema",
+  "abstract": "Non-failing additional hints that can help resolve extra requirements.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.676493",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.cwl.v1_2_1.CWLHintsList",
+    "ogc.cwl.v1_2_1.CWLHintsMap"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHints/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHints/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLHints/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLHints/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "description: Non-failing additional hints that can help resolve extra requirements.\noneOf:\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHintsMap/schema.yaml\n- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHintsList/schema.yaml\ntitle: CWLHints\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLHints"
+}

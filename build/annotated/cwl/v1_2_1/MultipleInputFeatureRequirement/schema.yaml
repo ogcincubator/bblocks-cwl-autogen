@@ -1,0 +1,15 @@
+additionalProperties: false
+description: 'Indicates that the ''Workflow'' must support multiple inbound data links
+  listed in the ''source''
+
+  field of ''WorkflowStepInput''.
+
+  '
+properties:
+  class:
+    description: CWL requirement class specification.
+    enum:
+    - MultipleInputFeatureRequirement
+    type: string
+title: MultipleInputFeatureRequirement
+type: object

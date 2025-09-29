@@ -1,0 +1,15 @@
+{
+  "additionalProperties": false,
+  "description": "Indicates that the 'Workflow' must support the 'valueFrom' field of 'WorkflowStepInput'.",
+  "properties": {
+    "class": {
+      "description": "CWL requirement class specification.",
+      "enum": [
+        "StepInputExpressionRequirement"
+      ],
+      "type": "string"
+    }
+  },
+  "title": "StepInputExpressionRequirement",
+  "type": "object"
+}

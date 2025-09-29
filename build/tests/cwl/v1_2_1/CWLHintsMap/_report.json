@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.cwl.v1_2_1.CWLHintsMap - CWLHintsMap",
+  "bblockName": "CWLHintsMap",
+  "bblockId": "ogc.cwl.v1_2_1.CWLHintsMap",
+  "generated": "2025-09-29T12:39:35.294072+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

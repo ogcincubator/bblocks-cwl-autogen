@@ -1,0 +1,11 @@
+description: All outputs produced by the Application Package.
+oneOf:
+- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputList/schema.yaml
+- $comment: Avoid 'oneOf' conflict of generic mapping key strings as output identifier
+    matching against '$import'.
+  allOf:
+  - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputMap/schema.yaml
+  - not:
+      $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.yaml
+- $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.yaml
+title: CWLOutputsDefinition

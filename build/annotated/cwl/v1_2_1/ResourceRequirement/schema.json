@@ -1,0 +1,38 @@
+{
+  "additionalProperties": false,
+  "description": "Specify basic hardware resource requirements\n(see also: https://www.commonwl.org/v1.2/CommandLineTool.html#ResourceRequirement).\n",
+  "properties": {
+    "class": {
+      "enum": [
+        "ResourceRequirement"
+      ],
+      "type": "string"
+    },
+    "coresMax": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceCoresMaximum/schema.json"
+    },
+    "coresMin": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceCoresMinimum/schema.json"
+    },
+    "outdirMax": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceOutDirMaximum/schema.json"
+    },
+    "outdirMin": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceOutDirMinimum/schema.json"
+    },
+    "ramMax": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceRAMMaximum/schema.json"
+    },
+    "ramMin": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceRAMMinimum/schema.json"
+    },
+    "tmpdirMax": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceTmpDirMaximum/schema.json"
+    },
+    "tmpdirMin": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/ResourceTmpDirMinimum/schema.json"
+    }
+  },
+  "title": "ResourceRequirement",
+  "type": "object"
+}

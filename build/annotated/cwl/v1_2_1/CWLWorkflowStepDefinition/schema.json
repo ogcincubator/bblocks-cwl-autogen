@@ -1,0 +1,22 @@
+{
+  "properties": {
+    "in": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepIn/schema.json"
+    },
+    "out": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepOut/schema.json"
+    },
+    "run": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepRun/schema.json"
+    },
+    "when": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLWorkflowStepWhen/schema.json"
+    }
+  },
+  "required": [
+    "in",
+    "run",
+    "out"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,12 @@
+{
+  "description": "Non-failing additional hints that can help resolve extra requirements.",
+  "oneOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHintsMap/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHintsList/schema.json"
+    }
+  ],
+  "title": "CWLHints"
+}

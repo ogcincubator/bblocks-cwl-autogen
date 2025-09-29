@@ -1,0 +1,30 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLExpression",
+  "name": "CWLExpression",
+  "itemClass": "schema",
+  "abstract": "When combined with 'InlineJavascriptRequirement', this field allows runtime parameter references\n(see also: https://www.commonwl.org/v1.2/CommandLineTool.html#Expression).\n",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.677718",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLExpression/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLExpression/",
+  "rdfData": [],
+  "validationPassed": true,
+  "description": "Whenever this option is applicable for a parameter, any other 'normal' string should not be specified.\nFor JSON schema validation, there is no easy way to distinguish them unless using complicated string patterns.\n",
+  "annotatedSchema": "$comment: 'Whenever this option is applicable for a parameter, any other ''normal''\n  string should not be specified.\n\n  For JSON schema validation, there is no easy way to distinguish them unless using\n  complicated string patterns.\n\n  '\ndescription: 'When combined with ''InlineJavascriptRequirement'', this field allows\n  runtime parameter references\n\n  (see also: https://www.commonwl.org/v1.2/CommandLineTool.html#Expression).\n\n  '\ntitle: CWLExpression\ntype: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLExpression"
+}

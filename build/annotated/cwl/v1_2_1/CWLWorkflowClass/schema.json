@@ -1,0 +1,11 @@
+{
+  "properties": {
+    "class": {
+      "enum": [
+        "Workflow"
+      ],
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

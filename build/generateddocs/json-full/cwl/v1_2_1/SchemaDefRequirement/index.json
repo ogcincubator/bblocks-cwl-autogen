@@ -1,0 +1,35 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.SchemaDefRequirement",
+  "name": "SchemaDefRequirement",
+  "itemClass": "schema",
+  "abstract": "SchemaDefRequirement",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.684906",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.cwl.v1_2_1.CWLTypeEnum",
+    "ogc.cwl.v1_2_1.CWLImport",
+    "ogc.cwl.v1_2_1.CWLTypeRecordSchema",
+    "ogc.cwl.v1_2_1.CWLTypeRecordArray"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaDefRequirement/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/SchemaDefRequirement/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/SchemaDefRequirement/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/SchemaDefRequirement/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "additionalProperties: false\nproperties:\n  class:\n    enum:\n    - SchemaDefRequirement\n    type: string\n  types:\n    items:\n      oneOf:\n      - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeEnum/schema.yaml\n      - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordSchema/schema.yaml\n      - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLTypeRecordArray/schema.yaml\n      - $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLImport/schema.yaml\n    type: array\nrequired:\n- types\ntype: object\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/SchemaDefRequirement"
+}

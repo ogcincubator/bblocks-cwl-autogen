@@ -1,0 +1,29 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLScatterMethod",
+  "name": "CWLScatterMethod",
+  "itemClass": "schema",
+  "abstract": "Describes how to decompose the scattered input into a discrete\nset of jobs. When 'dotproduct', specifies that each of the input arrays\nare aligned and one element taken from each array to construct each job.\nIt is an error if all input arrays are of different length. When 'nested_crossproduct',\nspecifies the Cartesian product of the inputs, producing a job for every\ncombination of the scattered inputs. The output must be nested arrays\nfor each level of scattering, in the order that the input arrays are listed\nin the scatter field. When 'flat_crossproduct', specifies the Cartesian\nproduct of the inputs, producing a job for every combination of the scattered\ninputs. The output arrays must be flattened to a single level, but otherwise\nlisted in the order that the input arrays are listed in the scatter field.\n",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.678164",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLScatterMethod/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLScatterMethod/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLScatterMethod/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLScatterMethod/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "description: 'Describes how to decompose the scattered input into a discrete\n\n  set of jobs. When ''dotproduct'', specifies that each of the input arrays\n\n  are aligned and one element taken from each array to construct each job.\n\n  It is an error if all input arrays are of different length. When ''nested_crossproduct'',\n\n  specifies the Cartesian product of the inputs, producing a job for every\n\n  combination of the scattered inputs. The output must be nested arrays\n\n  for each level of scattering, in the order that the input arrays are listed\n\n  in the scatter field. When ''flat_crossproduct'', specifies the Cartesian\n\n  product of the inputs, producing a job for every combination of the scattered\n\n  inputs. The output arrays must be flattened to a single level, but otherwise\n\n  listed in the order that the input arrays are listed in the scatter field.\n\n  '\nenum:\n- dotproduct\n- nested_crossproduct\n- flat_crossproduct\ntitle: scatterMethod\ntype: string\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLScatterMethod"
+}

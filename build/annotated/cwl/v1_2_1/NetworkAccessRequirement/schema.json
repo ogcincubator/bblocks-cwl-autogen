@@ -1,0 +1,20 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "class": {
+      "$comment": "Not 'NetworkAccessRequirement'",
+      "enum": [
+        "NetworkAccess"
+      ],
+      "type": "string"
+    },
+    "networkAccess": {
+      "$ref": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/NetworkAccess/schema.json"
+    }
+  },
+  "required": [
+    "networkAccess"
+  ],
+  "title": "NetworkAccessRequirement",
+  "type": "object"
+}

@@ -1,0 +1,42 @@
+
+
+{
+  "itemIdentifier": "ogc.cwl.v1_2_1.CWLAtomicBase",
+  "name": "CWLAtomicBase",
+  "itemClass": "schema",
+  "abstract": "Direct CWL definition instead of the graph representation.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-09-29T14:14:37.674167",
+  "dateOfLastChange": "2025-09-29",
+  "register": "ogc-building-block-register",
+  "link": "https://www.commonwl.org/v1.2/Workflow.html",
+  "version": "1.2.1",
+  "tags": [
+    "cwl"
+  ],
+  "shaclShapes": {},
+  "dependsOn": [
+    "ogc.cwl.v1_2_1.CWLIdentifier",
+    "ogc.cwl.v1_2_1.CWLScatter",
+    "ogc.cwl.v1_2_1.CWLInputsDefinition",
+    "ogc.cwl.v1_2_1.CWLScatterMethod",
+    "ogc.cwl.v1_2_1.CWLOutputsDefinition",
+    "ogc.cwl.v1_2_1.CWLArguments",
+    "ogc.cwl.v1_2_1.CWLIntent",
+    "ogc.cwl.v1_2_1.CWLRequirements",
+    "ogc.cwl.v1_2_1.CWLCommand",
+    "ogc.cwl.v1_2_1.CWLExpression",
+    "ogc.cwl.v1_2_1.CWLHints"
+  ],
+  "schema": {
+    "application/yaml": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLAtomicBase/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLAtomicBase/schema.json"
+  },
+  "sourceSchema": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLAtomicBase/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/bblocks-cwl/_sources/v1_2_1/CWLAtomicBase/",
+  "rdfData": [],
+  "validationPassed": true,
+  "annotatedSchema": "description: Direct CWL definition instead of the graph representation.\nproperties:\n  arguments:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLArguments/schema.yaml\n  baseCommand:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLCommand/schema.yaml\n  class:\n    description: CWL class specification. This is used to differentiate between single\n      Application Package (AP)definitions and Workflow that chains multiple packages.\n    enum:\n    - CommandLineTool\n    - ExpressionTool\n    title: Class\n    type: string\n  hints:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLHints/schema.yaml\n  id:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIdentifier/schema.yaml\n  inputs:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLInputsDefinition/schema.yaml\n  intent:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLIntent/schema.yaml\n  outputs:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLOutputsDefinition/schema.yaml\n  requirements:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLRequirements/schema.yaml\n  scatter:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLScatter/schema.yaml\n  scatterMethod:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLScatterMethod/schema.yaml\n  stderr:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml\n    description: 'Destination of the error stream.\n\n      Typically, an expression referring to a desired file name or provided by a CWL\n      input reference.\n\n      '\n  stdin:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml\n    description: \"Source of the input stream. \\nTypically, an expression referring\n      to an existing file name or an input of the CWL document.\\n\"\n  stdout:\n    $ref: https://ogcincubator.github.io/bblocks-cwl/build/annotated/cwl/v1_2_1/CWLExpression/schema.yaml\n    description: 'Destination of the output stream.\n\n      Typically, an expression referring to a desired file name or provided by a CWL\n      input reference.\n\n      '\nrequired:\n- class\n- inputs\n- outputs\ntitle: CWL atomic definition\ntype: object\n",
+  "gitRepository": "https://github.com/ogcincubator/bblocks-cwl",
+  "gitPath": "_sources/v1_2_1/CWLAtomicBase"
+}

@@ -1,0 +1,4 @@
+oneOf:
+- type: number
+- type: string
+title: CWLTypeSymbolValues
