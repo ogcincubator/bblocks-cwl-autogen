@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "loadContents": "cwl:loadContents",
+    "streamable": "https://w3id.org/cwl/cwl#FieldBase/streamable"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "cwl": "https://w3id.org/cwl/cwl#",
+    "checksum": "https://w3id.org/cwl/cwl#File/checksum",
+    "size": "https://w3id.org/cwl/cwl#File/size"
+  }
+}
