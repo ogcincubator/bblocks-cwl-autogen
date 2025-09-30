@@ -1,0 +1,144 @@
+diff --git a/_sources/v1_2_1/CWLDefaultTypedConditional/schema.yaml b/_sources/v1_2_1/CWLDefaultTypedConditional/schema.yaml
+index 78c2f52..52c3bf3 100644
+--- a/_sources/v1_2_1/CWLDefaultTypedConditional/schema.yaml
++++ b/_sources/v1_2_1/CWLDefaultTypedConditional/schema.yaml
+@@ -113,7 +113,8 @@ allOf:
+   then:
+     properties:
+       default:
+-        $ref: bblocks://ogc.cwl.v1_2_1.CWLTypeSymbolValues
++        type:
++          $ref: bblocks://ogc.cwl.v1_2_1.CWLTypeSymbolValues
+ - $comment: Optional enum.
+   if:
+     properties:
+diff --git a/_sources/v1_2_1/CWLDirectoryOnlyParametersConditional/schema.yaml b/_sources/v1_2_1/CWLDirectoryOnlyParametersConditional/schema.yaml
+index df7973d..0bcb00e 100644
+--- a/_sources/v1_2_1/CWLDirectoryOnlyParametersConditional/schema.yaml
++++ b/_sources/v1_2_1/CWLDirectoryOnlyParametersConditional/schema.yaml
+@@ -9,30 +9,28 @@ else:
+     properties:
+       loadListing: {}
+ if:
+-  oneOf:
+-  - $comment: Single required or optional 'Directory'.
+-    properties:
++  properties:
++    oneOf:
++    - $comment: Single required or optional 'Directory'.
+       type:
+         enum:
+         - Directory
+         - Directory?
+         - Directory[]
+         - Directory[]?
+-  - $comment: Array of required or optional 'Directory'.
+-    items:
+-      oneOf:
+-      - type: object
+-        enum:
+-          - Directory
+-          - Directory?
+-      - contains:
+-          properties:
++    - $comment: Array of required or optional 'Directory'.
++      items:
++        oneOf:
++        - type:
++          - const: Directory
++          - const: Directory?
++        - contains:
+             type:
+-              enum:
+-                - Directory
+-                - Directory?
+-        type: array
+-    type: array
++            - const: Directory
++            - const: Directory?
++          type: array
++      type:
++        const: array
+ then:
+   $ref: bblocks://ogc.cwl.v1_2_1.CWLDirectoryOnlyParameters
+ type: object
+diff --git a/_sources/v1_2_1/CWLFileOnlyParametersConditional/schema.yaml b/_sources/v1_2_1/CWLFileOnlyParametersConditional/schema.yaml
+index 7d8460a..3040ece 100644
+--- a/_sources/v1_2_1/CWLFileOnlyParametersConditional/schema.yaml
++++ b/_sources/v1_2_1/CWLFileOnlyParametersConditional/schema.yaml
+@@ -12,32 +12,28 @@ else:
+       secondaryFiles: {}
+       streamable: {}
+ if:
+-  oneOf:
+-  - $comment: Single required or optional 'File'.
+-    properties:
++  properties:
++    oneOf:
++    - $comment: Single required or optional 'File'.
+       type:
+         enum:
+         - File
+         - File?
+         - File[]
+         - File[]?
+-  - $comment: Array of required or optional 'File'.
+-    items:
+-      oneOf:
+-      - type: object
+-        properties:
+-          type:
+-            enum:
+-              - File
+-              - File?
+-      - contains:
+-          properties:
++    - $comment: Array of required or optional 'File'.
++      items:
++        oneOf:
++        - type:
++          - const: File
++          - const: File?
++        - contains:
+             type:
+-              enum:
+-                - File
+-                - File?
+-        type: array
+-    type: array
++            - const: File
++            - const: File?
++          type: array
++      type:
++        const: array
+ then:
+   $ref: bblocks://ogc.cwl.v1_2_1.CWLFileOnlyParameters
+ type: object
+diff --git a/_sources/v1_2_1/EnvironmentDef/schema.yaml b/_sources/v1_2_1/EnvironmentDef/schema.yaml
+index dd02467..7e0fcb4 100644
+--- a/_sources/v1_2_1/EnvironmentDef/schema.yaml
++++ b/_sources/v1_2_1/EnvironmentDef/schema.yaml
+@@ -4,7 +4,8 @@ properties:
+     minLength: 1
+     type: string
+   envValue:
+-    $ref: bblocks://ogc.cwl.v1_2_1.CWLExpression
++    type:
++      $ref: bblocks://ogc.cwl.v1_2_1.CWLExpression
+ required:
+ - envName
+ - envValue
+diff --git a/_sources/v1_2_1/InlineJavascriptRequirement/schema.yaml b/_sources/v1_2_1/InlineJavascriptRequirement/schema.yaml
+index 89c63a9..214bd21 100644
+--- a/_sources/v1_2_1/InlineJavascriptRequirement/schema.yaml
++++ b/_sources/v1_2_1/InlineJavascriptRequirement/schema.yaml
+@@ -16,7 +16,7 @@ properties:
+     type: string
+   expressionLib:
+     $ref: bblocks://ogc.cwl.v1_2_1.InlineJavascriptLibraries
+-required:
+-- expressionLib
++  required:
++  - expressionLib
+ title: InlineJavascriptRequirement
+ type: object
